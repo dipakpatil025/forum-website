@@ -1,0 +1,15 @@
+<?php  
+            $sql = "SELECT * FROM `categories`";
+            $result = mysqli_query($conn,$sql);
+            while ($row = mysqli_fetch_assoc($result)) {
+                    echo $row['categories_id'];
+                    echo "<br>";
+                    echo $row['categories_name'];
+                    echo "<br>";
+                    echo $row['categories_description'];
+                    echo "<br>";
+
+                  
+            }
+            
+            ?>
